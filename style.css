@@ -1,8 +1,66 @@
 *{
-    background-color: #90EE90;
+    background-color: rgb(187, 255, 217);
+    margin: 0%;
 }
 
 .Heading{
-    color: white;
+    display: flex;
+    background-color: #1f2937;
+    border-width: 0px;
+    padding: 20px;
+    color: #f9faf8;
+    justify-content: center;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
 
+.k{
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple !important;
+    margin: 20px 150px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.inputprompt, .inputs{
+    color: #f9faf8;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.inputprompt{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.inputs button{
+    display: flex;
+    font-size:30px;
+    background-color: rgb(255, 149, 0);
+    color: #f9faf8;
+}
+
+.p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#compchoice, #result, #score{
+    display: flex;
+    font-size: 25px;
+    padding: 5px;
 }
