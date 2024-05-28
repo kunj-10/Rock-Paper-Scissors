@@ -10,10 +10,9 @@ function getComputerChoice() {
 
 function playGame(player, computer) {
     games++;
-    console.log("Games played: ", games);
     if ((player === "Rock" && computer === "Scissors") || 
-        (player === "Paper" && computer === "Rock") || 
-        (player === "Scissors" && computer === "Paper")) {
+    (player === "Paper" && computer === "Rock") || 
+    (player === "Scissors" && computer === "Paper")) {
         return "Win";
     } else if (player === computer) {
         return "Draw";
@@ -26,6 +25,8 @@ function reset()
 {
     plyr = 0;
     comp = 0;
+    console.log("Games played before reset: ", games);
+    games = 0;
     document.getElementById('result').textContent = "";
     document.getElementById('score').textContent = "Player: " + plyr + " Computer: " + comp;
     document.getElementById('compchoice').textContent = "";

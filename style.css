@@ -70,3 +70,18 @@
     font-size: 25px;
     padding: 5px;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#Reset{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #f9faf8;
+    background-color: #1f2937;
+}
