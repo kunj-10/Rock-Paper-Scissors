@@ -22,6 +22,14 @@ function playGame(player, computer) {
     }
     
 }
+function reset()
+{
+    plyr = 0;
+    comp = 0;
+    document.getElementById('result').textContent = "";
+    document.getElementById('score').textContent = "Player: " + plyr + " Computer: " + comp;
+    document.getElementById('compchoice').textContent = "";
+}
 
 function handleClick(event) {
     var player = event.target.id;
@@ -44,7 +52,12 @@ function handleClick(event) {
     document.getElementById('compchoice').textContent = "Computer chose: " + computer;
 }
 
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('#Rock, #Paper, #Scissors');
 buttons.forEach(button => {
     button.addEventListener('click', handleClick);
 });
+
+const buttonss = document.querySelectorAll('#Reset')
+buttonss.forEach(button => {
+    button.addEventListener('click', reset);
+})
