@@ -51,6 +51,15 @@ function handleClick(event) {
     document.getElementById('result').textContent = result;
     document.getElementById('score').textContent = "Player: " + plyr + " Computer: " + comp;
     document.getElementById('compchoice').textContent = "Computer chose: " + computer;
+
+    if(comp === 5){
+        alert("Computer scored 5 points!\nComputer Wins the Game!");
+        reset();
+    }else if(plyr === 5){
+        alert("Player scored 5 points!\nPlayer Wins the Game!");
+        reset();
+    }
+
 }
 
 const buttons = document.querySelectorAll('#Rock, #Paper, #Scissors');
